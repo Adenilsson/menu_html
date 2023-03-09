@@ -2,27 +2,32 @@
 *{margin: 0;
      padding: 0;
 }
-
-form input[type="search"]{
-    height: 45px;
-    width: 30%;
+.menu form{
+   background-color: #222;
+}
+.menu form input[type="text"]{
+    height: 46px;
+    width: 90%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 20px;
     text-align: center;
+    min-width: 150px;
+   
 
 }
-form img{
+.menu form button{
     background-color: #fff;
-    position: relative;
-    margin-left: -60px;
-    height: 30px;
-    width: 30px;
+    margin-left: -50px;
+    height: 45px;
+    width: 45px;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: transparent;
-    
-    
+    cursor: pointer;
+    border-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 .menu{
     width: 100%;
@@ -47,9 +52,21 @@ form img{
     background-color: #222;
     color: #fff;
 }
+.menu form{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
 .menu ul ul{
     position: absolute;
     visibility: hidden;
+}
+.menu ul #shearc{
+    width: 250px;
+    float: left;
+    border-bottom: solid 1px #ccc;
 }
 .menu ul li:hover ul{
     visibility: visible;
@@ -92,6 +109,11 @@ label[for="bt_menu"]{
         margin-top: 5px;
         margin-left:  -100%;
         transition: all .4;
+    }
+    .menu ul #shearc{
+        width: 100%;
+        float: none;
+        
     }
     .menu ul li{
         width: 100%;

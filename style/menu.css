@@ -4,10 +4,11 @@
 }
 .menu form{
    background-color: #222;
+   
 }
 .menu form input[type="text"]{
     height: 45px;
-    width: 90%;
+    width: 60%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     /*border-radius: 20px;*/
@@ -40,6 +41,8 @@
 .menu{
     width: 100%;
     height: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: #222;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -106,17 +109,22 @@ label[for="bt_menu"]{
 label[for="bt_menu"]{
     display: none;
 }
-@media(max-width: 800px){
+
+@media(max-width: 1120px){
     label[for="bt_menu"]{
         display: block;
     }
     #bt_menu:checked ~ .menu{
+        transition: all 0.1;
         margin-left: 0;
     }
     .menu{
+        padding-left: 0px;
+        padding-right: 0px;
         margin-top: 5px;
-        margin-left:  -100%;
-        transition: all .4;
+        margin-left:  -120%;
+        transition: all 0.1;
+        min-width: 280px;
     }
     .menu ul #shearc{
         width: 100%;
@@ -131,15 +139,44 @@ label[for="bt_menu"]{
         position :static;
         overflow: hidden;
         max-height: 0;
-        transition: all .4s;
+        transition: all .2s;
     }
     .menu ul li:hover ul{
         height: auto;
         max-height: 200px;
     }
-    form input[type="text"]{
-        height: 45px;
-        min-width: 160px;
+    .menu a{
+        padding: 5px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background-color: #222;
+        color: #fff;
+    }
+    .menu form input[type="text"]{
+        height: 27px;
+        min-width: 120px;
+    }
+    .menu form button{
+        background-color: #817777;
+        margin-left: -5px;
+        height: 27px;
+        width: 27px;
+        font-family: Arial, Helvetica, sans-serif;
+        /*border-radius: 25px;
+        background-color: transparent;*/
+        cursor: pointer;
+        border: none;
+        margin-top: -5px;
+        /*border-color: transparent;*/
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+    .menu form button img{
+       
+        width: 20px;
+        height: 20px;
     }
 }
     

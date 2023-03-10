@@ -7,9 +7,10 @@
    
 }
 .menu form input[type="text"]{
-    height: 45px;
+    height: 35px;
     width: 60%;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
     font-size: 20px;
     /*border-radius: 20px;*/
     text-align: center;
@@ -20,8 +21,8 @@
 .menu form button{
     background-color: #817777;
     margin-left: -5px;
-    height: 47px;
-    width: 47px;
+    height: 37px;
+    width: 37px;
     font-family: Arial, Helvetica, sans-serif;
     /*border-radius: 25px;
     background-color: transparent;*/
@@ -30,19 +31,17 @@
     margin-top: -5px;
     /*border-color: transparent;*/
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 10%;
     vertical-align: middle;
 }
 .menu form button img{
    
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 .menu{
     width: 100%;
     height: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
     background-color: #222;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -51,9 +50,9 @@
     position: relative;
 }
 .menu ul li{
-    width: 150px;
+    width: 7%;
     float: left;
-    border-bottom: solid 1px #ccc;
+    /*border-bottom: solid 1px #ccc;*/
 }
 .menu a{
     padding: 15px;
@@ -77,7 +76,7 @@
 .menu ul #shearc{
     width: 500px;
     float: left;
-    border-bottom: solid 1px #ccc;
+    /*border-bottom: solid 1px #ccc;*/
 }
 .menu ul li:hover ul{
     visibility: visible;
@@ -87,7 +86,7 @@
 }
 .menu ul ul li{
     float: none;
-    border-bottom: solid 1px #ccc;
+    /*border-bottom: solid 1px #ccc;*/
 }
 .menu ul ul li a{
     background-color: #069;
@@ -100,8 +99,8 @@ label[for="bt_menu"]{
     text-align: center;
     font-size: 30px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 #bt_menu{
     display: none;
@@ -109,21 +108,46 @@ label[for="bt_menu"]{
 label[for="bt_menu"]{
     display: none;
 }
-
+#entrar a{
+    background-color: #225;
+}
+#cadastro a{
+    background-color: #225;
+    margin-left: 2px;
+    
+}
+/*@media (max-width: 1120px) {
+    .menu{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    form input[type="text"]{
+        height: 45px;
+        width: 40%;
+        min-width: 120px;
+    }
+}*/
 @media(max-width: 1120px){
+
     label[for="bt_menu"]{
         display: block;
     }
     #bt_menu:checked ~ .menu{
-        transition: all 0.1;
         margin-left: 0;
+        transition: all 0.1;
+    }
+    .menu_oculto{
+        width: 100%;
+        height: 40px;
+        margin-top: -40px;
+        background-color: #222;
     }
     .menu{
         padding-left: 0px;
         padding-right: 0px;
-        margin-top: 5px;
+        margin-top: 1px;
         margin-left:  -120%;
-        transition: all 0.1;
+        transition: all .1;
         min-width: 280px;
     }
     .menu ul #shearc{
@@ -141,9 +165,13 @@ label[for="bt_menu"]{
         max-height: 0;
         transition: all .2s;
     }
+    .menu ul ul li{
+        border-bottom: solid 1px #ccc;
+    }
     .menu ul li:hover ul{
         height: auto;
         max-height: 200px;
+        border-bottom: solid 1px #ccc;
     }
     .menu a{
         padding: 5px;

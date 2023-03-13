@@ -50,12 +50,13 @@
     position: relative;
 }
 .menu ul li{
-    width: 7%;
+    width: 130px;
     float: left;
+    margin-top: 1px;
     /*border-bottom: solid 1px #ccc;*/
 }
 .menu a{
-    padding: 15px;
+    padding: 10px;
     display: block;
     text-decoration: none;
     text-align: center;
@@ -90,6 +91,7 @@
 }
 .menu ul ul li a{
     background-color: #069;
+    width: 100%;
 }
 label[for="bt_menu"]{
     padding: 5px;
@@ -110,6 +112,7 @@ label[for="bt_menu"]{
 }
 #entrar a{
     background-color: #225;
+   
 }
 #cadastro a{
     background-color: #225;
@@ -127,7 +130,7 @@ label[for="bt_menu"]{
         min-width: 120px;
     }
 }*/
-@media(max-width: 1120px){
+@media(max-width: 1280px){
 
     label[for="bt_menu"]{
         display: block;
